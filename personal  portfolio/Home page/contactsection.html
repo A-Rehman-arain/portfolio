@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="contactsectioncss.css".css />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap"
+      rel="stylesheet"/>
+      
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Section</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-container">
+          <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+              Abdul <span>Rehman</span>
+          </div>
+          <div class="links">
+              <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+              <!-- <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div> -->
+              <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="indexskills.html">Skills</a></div>
+              <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="indexsevices.html">Services</a></div>
+              <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contactsection.html">Contact</a></div>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+  </div>
+      <div class="dropdown">
+          <div class="links">
+              <a href="index.html">Home</a>
+              <!-- <a href="#">About</a> -->
+              <a href="indexskills.html">Skills</a>
+              <a href="indexsevices.html">Service</a>
+              <a href="contactsection.html">Contact</a>
+              <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+          </div>
+      </div>
+  </nav>
+    <div class="container">
+      <main class="row">
+        <section class="col left">
+          <div class="contactTitle">
+            <h2>Get In Touch</h2>
+            <p>
+				I'd love to hear from you! Reach out for any inquiries or collaborations.
+            </p>
+          </div>
+
+          <div class="contactInfo">
+            <div class="iconGroup">
+              <div class="icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="details">
+                <span>Phone</span>
+                <span>+92310 3866174</span>
+              </div>
+            </div>
+
+            <div class="iconGroup">
+              <div class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="details">
+                <span>Email</span>
+                <span>abdul.rehman100625@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="iconGroup">
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="details">
+                <span>Location</span>
+                <span>Karachi,Pakistan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="socialMedia">
+            <a href="https://www.facebook.com/profile.php?id=100069190480007&mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://github.com/A-Rehman-arain"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/abdul.rehman_arain/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/abdul-rehman-b4ab90329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </section>
+
+        <section class="col right">
+          <form class="messageForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden"
+            name="access_key"
+            value="a1bc779d-1581-4126-aa46-3ffe6413941a"
+            
+            />
+            <div class="inputGroup halfWidth">
+              <input type="text" name="first_name" required="required" />
+              <label>Your Name</label>
+            </div>
+
+            <div class="inputGroup halfWidth">
+              <input type="email" name="Email" required="required" />
+              <label>Email</label>
+            </div>
+
+            <div class="inputGroup fullWidth">
+              <input type="text" name="Subject" required="required" />
+              <label>Subject</label>
+            </div>
+
+            <div class="inputGroup fullWidth">
+              <input type="hidden" name="Say Something" required="required" />
+              <textarea required="required"></textarea>
+              <label>Say Something</label>
+            </div>
+
+            <div class="inputGroup fullWidth">
+              <button>Send Message</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="contactsectionscript.js"></script>
+
+  </body>
+</html>
+
